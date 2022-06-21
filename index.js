@@ -29,11 +29,16 @@ const data = [
 
 
 function search(term) {
-
+  const filteredArray = data.filter(name => name.toLowerCase().includes(term.toLowerCase()));
+  filteredArray.forEach((name, index) => console.log(`${index + 1}. ${name}`))
 }
 
+console.log("Search FN: With o")
 search("o")
-
+console.log("----")
+console.log("Search FN: With a")
+search("a")
+console.log("=====")
 /*
 
   switch S for $ function:
@@ -55,11 +60,13 @@ search("o")
 */
 
 function switchSfor$() {
-
+  const modifiedNames = data.map(name => name.replace("s", "$"))
+  modifiedNames.forEach((name, index) => console.log(`${ index + 1}. ${name}`))
 }
 
+console.log("Switch For $")
 switchSfor$();
-
+console.log("=====")
 /*
   Iterate through an array of objects in order to find a person that matches the id passed in! If no person in the array exist, log out, oops didn't find anyone! If it does exist, then log, Found <person's name>!
 
@@ -74,7 +81,7 @@ switchSfor$();
   logs => oops didn't find anyone!
 */
 
-const arrayOfObjects([
+const arrayOfObjects = ([
   { id: 1, name: "Samuel" },
   { id: 2, name: "Rhea" },
   { id: 3, name: "Linda" },
@@ -86,11 +93,17 @@ const arrayOfObjects([
 
 function findPerson(id) {
   // iterate through arrayOfObjects here
+  const person = arrayOfObjects.find(person => person.id === id);
+  console.log(person ? `Found ${person.name}!` : "oops didn't find anyone...")
 }
 
 
+console.log("findPerson with id of 1")
 findPerson(1)
+console.log('----')
+console.log("findPerson with id of 100")
 findPerson(100)
+console.log('====')
 
 
 /*
@@ -110,7 +123,8 @@ const items = [
 ]
 
 function calculateTheCost() {
-
+  const total = items.reduce((a, b) => a + b.price, 0)
+  console.log(`total is: $${total}`)
 }
-
+console.log('Calculate The Cost')
 calculateTheCost();
