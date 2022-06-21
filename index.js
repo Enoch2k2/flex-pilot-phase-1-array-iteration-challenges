@@ -10,7 +10,7 @@
 
    Should log a human readable list, see how you can add an index to the iteration
 
-   Hint: Good possability that two iterators are used here, also use the data array above for this.
+   Hint: Good possability that two iterators are used here, also use the data array below for this.
 
 */
 
@@ -29,7 +29,7 @@ const data = [
 
 
 function search(term) {
-
+  console.log(term)
 }
 
 search("o")
@@ -74,7 +74,7 @@ switchSfor$();
   logs => oops didn't find anyone!
 */
 
-const arrayOfObjects([
+const arrayOfObjects = [
   { id: 1, name: "Samuel" },
   { id: 2, name: "Rhea" },
   { id: 3, name: "Linda" },
@@ -82,7 +82,7 @@ const arrayOfObjects([
   { id: 5, name: "Bob" },
   { id: 6, name: "Jojo" },
   { id: 7, name: "Parker" }
-])
+]
 
 function findPerson(id) {
   // iterate through arrayOfObjects here
