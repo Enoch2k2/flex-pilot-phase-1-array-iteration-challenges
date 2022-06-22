@@ -62,7 +62,7 @@ console.log("=== end Search Function Logs ===")
 */
 
 function switchSfor$() {
-  const modifiedNames = data.map(name => name.replace("s", "$"))
+  const modifiedNames = data.map(name => name.replace(/[sS]/g, "$"))
   modifiedNames.forEach((name, index) => console.log(`${ index + 1}. ${name}`))
 }
 console.log("=== Switch S For $ Function Logs ===")
