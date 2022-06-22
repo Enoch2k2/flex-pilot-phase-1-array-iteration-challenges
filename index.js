@@ -32,7 +32,9 @@ function search(term) {
   console.log(term)
 }
 
+console.log("=== Search Function Logs ===")
 search("o")
+console.log("=== end Search Function Logs ===")
 
 /*
 
@@ -58,20 +60,22 @@ function switchSfor$() {
 
 }
 
+console.log("=== Switch S For $ Function Logs ===")
 switchSfor$();
+console.log("=== end Switch S For $ Function Logs ===")
 
 /*
-  Iterate through an array of objects in order to find a person that matches the id passed in! If no person in the array exist, log out, oops didn't find anyone! If it does exist, then log, Found <person's name>!
+Iterate through an array of objects in order to find a person that matches the id passed in! If no person in the array exist, log out, oops didn't find anyone! If it does exist, then log, Found <person's name>!
 
-  Ex:
+Ex:
 
-  findPerson(1)
+findPerson(1)
 
-  logs => Found Samuel!
+logs => Found Samuel!
 
-  findPerson(100)
+findPerson(100)
 
-  logs => oops didn't find anyone!
+logs => oops didn't find anyone!
 */
 
 const arrayOfObjects = [
@@ -89,14 +93,16 @@ function findPerson(id) {
 }
 
 
+console.log("=== find Person Function Logs ===")
 findPerson(1)
 findPerson(100)
+console.log("=== end find Person Function Logs ===")
 
 
 /*
-  calculateTheCost:
+calculateTheCost:
 
-    Iterate through the list of items using the reduce function in order to find the cost of the items listed below. Should log the result: The price is 2324!
+Iterate through the list of items using the reduce function in order to find the cost of the items listed below. Should log the result: The price is 2324!
 */
 
 const items = [
@@ -110,7 +116,9 @@ const items = [
 ]
 
 function calculateTheCost() {
-
+  
 }
 
+console.log("=== Calculate The Cost Function Logs ===")
 calculateTheCost();
+console.log("=== end Calculate The Cost Function Logs ===")
